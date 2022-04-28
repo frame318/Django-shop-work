@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %}<title>My-Shop</title>{% endblock %}
+
+{% block content %}
+<div class="container">
+
+      <div class="card">
+        <img src="{{product.image.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">{{product.description}}</p>
+          <p class="card-text">price : {{product.price}}</p>
+          <a href="#" class="btn btn-primary">view</a>
+        </div>
+  
+  </div>
+</div>
+{% endblock %}
